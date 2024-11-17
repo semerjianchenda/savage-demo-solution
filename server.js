@@ -5,8 +5,8 @@ const MongoClient = require('mongodb').MongoClient
 
 var db, collection;
 
-const url = "mongodb+srv://demo:demo@cluster0-q2ojb.mongodb.net/test?retryWrites=true";
-const dbName = "demo";
+const url = "mongodb+srv://semerjiankrantschenda:Test123@auth.qpdes.mongodb.net/demo?retryWrites=true&w=majority&appName=auth";
+const dbName = "auth";
 
 app.listen(3000, () => {
     MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, (error, client) => {
@@ -73,3 +73,5 @@ app.delete('/messages', (req, res) => {
     res.send('Message deleted!')
   })
 })
+
+
